@@ -1,0 +1,12 @@
+{
+    "channel_names": {
+        "0": "EM"
+    },
+    "labels": {
+        "background": 0,
+        "mito": 1
+    },
+    "numTraining": 1,
+    "file_ending": ".png",
+    "name": "Dataset062_humanmito"
+}

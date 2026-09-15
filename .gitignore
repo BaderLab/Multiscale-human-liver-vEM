@@ -9,6 +9,9 @@ __pycache__/
 *.pth
 *.pt
 *.ckpt
+# Local convenience symlink to a downloaded/extracted checkpoint folder, used
+# by the nnU-Net demo notebook so it doesn't hardcode a local machine path.
+nnUNet/notebooks/mitochondria_2d_checkpoint
 
 # Local environments
 venv/

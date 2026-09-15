@@ -1,14 +1,14 @@
-# MuST-EM: Multiscale Tissue Electron Microscopy
+# Multiscale human liver vEM
 
 This repository contains the deep-learning segmentation and downstream quantitative
-analysis code for **MuST-EM**, an end-to-end volume electron microscopy (vEM) workflow
+analysis code for **multiscale human liver vEM**, an end-to-end volume electron microscopy (vEM) workflow
 combining large-volume SBF-SEM acquisition, expert pathologist annotation,
 deep-learning-based segmentation across scales, quantitative morphometric analysis, and
 inter-structure contact analysis.
 
 ## Introduction
 
-We applied MuST-EM to an intact periportal region of human liver tissue, imaging a
+We applied this workflow to an intact periportal region of human liver tissue, imaging a
 contiguous volume of 152 × 140 × 33 µm³ at 8 nm pixel size that captures tissue,
 vascular, cellular, and organellar architecture within a single dataset. Automated
 segmentation enabled comprehensive annotation of the full volume, from which we
@@ -213,8 +213,8 @@ We thank the [SAM2](https://arxiv.org/abs/2408.00714) and [nnUNet](https://www.n
 
 <!-- Update this once the manuscript is published -->
 ```bibtex
-@article{MuST-EM,
-  title   = {MuST-EM: an end-to-end workflow for multiscale volume electron microscopy of intact tissue},
+@article{MultiscaleHumanLiverVEM,
+  title   = {Multiscale human liver vEM: an end-to-end workflow for multiscale volume electron microscopy of intact tissue},
   author  = {},
   journal = {},
   volume  = {},

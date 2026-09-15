@@ -31,7 +31,9 @@ signature consistent with models of ER-mediated mitochondrial remodelling.
 | `morphology_features.py` | 3D morphological feature extraction from instance-segmented organelle volumes (PyRadiomics-based). |
 | `mito_er_analysis.py` | Mitochondrial morphology clustering, per-hepatocyte distribution analysis, and ER–mitochondria narrowing-site analysis. |
 | `nnUNet/` | Modified copy of [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) (organelle-level segmentation), Apache License 2.0 — see `nnUNet/NOTICE.md`. |
+| `nnUNet/notebooks/predict_mitochondria_on_EM_slices.ipynb` | Step-by-step demo notebook: loading a trained nnU-Net checkpoint and running organelle (mitochondria) segmentation on example EM slices, with outputs already included. |
 | `SAM2/` | Modified copy of [SAM2](https://github.com/facebookresearch/sam2) (vascular/cellular-level segmentation backbone), Apache License 2.0 — see `SAM2/NOTICE.md`. |
+| `SAM2/notebooks/predict_on_EM_slices.ipynb` | Step-by-step demo notebook: prompt-guided SAM2 mask propagation for vascular/cellular structures across example EM slices, with outputs already included. |
 | `create_run_example.slurm` | Example Slurm submission script (Compute Canada environment) for running `mito_er_analysis.py` on an HPC cluster. |
 
 ## System Requirements
@@ -83,6 +85,14 @@ signature consistent with models of ER-mediated mitochondrial remodelling.
    [Zenodo](https://zenodo.org/records/17360859) (required for organelle segmentation).
 
 ## Getting Started
+
+> **New here? Start with the demo notebooks.** Two self-contained Jupyter notebooks
+> walk through, end to end, how the segmentation methods below are applied to real EM
+> slices — with all outputs (figures, predicted masks) already baked in, so you can see
+> exactly what to expect without running anything first:
+>
+> - [`nnUNet/notebooks/predict_mitochondria_on_EM_slices.ipynb`](nnUNet/notebooks/predict_mitochondria_on_EM_slices.ipynb) — organelle (mitochondria) segmentation with nnU-Net.
+> - [`SAM2/notebooks/predict_on_EM_slices.ipynb`](SAM2/notebooks/predict_on_EM_slices.ipynb) — vascular/cellular segmentation with SAM2 mask propagation.
 
 ### 1. Vascular and Cellular Level Segmentation
 
@@ -211,14 +221,4 @@ We thank the [SAM2](https://arxiv.org/abs/2408.00714) and [nnUNet](https://www.n
 
 ## Citation
 
-<!-- Update this once the manuscript is published -->
-```bibtex
-@article{MultiscaleHumanLiverVEM,
-  title   = {Multiscale human liver vEM: an end-to-end workflow for multiscale volume electron microscopy of intact tissue},
-  author  = {},
-  journal = {},
-  volume  = {},
-  pages   = {},
-  year    = {2026}
-}
-```
+A citation entry will be added here once the accompanying manuscript is published.
